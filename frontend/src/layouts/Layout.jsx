@@ -1,0 +1,3 @@
+import { Link, Outlet } from 'react-router-dom'
+import { Activity } from 'lucide-react'
+export default function Layout() { return <div className="min-h-screen"><header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5"><Link to="/" className="flex items-center gap-2 text-lg font-bold"><span className="grid h-9 w-9 place-items-center rounded-xl bg-violet-600 shadow-glow"><Activity size={19}/></span>CodeMedic <span className="text-violet-400">AI</span></Link><Link to="/dashboard" className="rounded-xl border border-white/10 px-4 py-2 text-sm text-slate-200 hover:bg-white/5">Open dashboard</Link></header><main><Outlet /></main></div> }

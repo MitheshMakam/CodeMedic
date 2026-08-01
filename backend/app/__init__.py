@@ -1,0 +1,1 @@
+"""CodeMedic AI application package."""

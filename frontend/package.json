@@ -1,0 +1,19 @@
+{
+  "name": "codemedic-ai-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "axios": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "latest",
+    "react-router-dom": "latest",
+    "remark-gfm": "latest"
+  },
+  "devDependencies": { "autoprefixer": "latest", "postcss": "latest", "tailwindcss": "^3.4.17", "vite": "latest" }
+}
