@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     openai_api_key: str | None = None
     openai_model: str = "gpt-4.1-mini"
     github_token: str | None = None
-    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174"
+    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174,https://codemedic-repo.vercel.app"
     max_repository_files: int = 100
     max_file_bytes: int = 100_000
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     "http://localhost:5173",
     "http://127.0.0.1:5174",
     "http://localhost:5174",
+    "https://codemedic-repo.vercel.app",
 ]
         return list(dict.fromkeys([*configured, *local_origins]))
 
